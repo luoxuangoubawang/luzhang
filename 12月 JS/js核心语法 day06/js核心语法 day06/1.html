@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+<!-- 		步骤1: table标签
+		步骤2:
+		步骤3:遍历数组,目的是动态的创建tr 和td 然后把数组里面的元素添加到里面 -->
+		<table>
+			<script>
+				var arr = [[101, "jill", 25],[102, "sk", 20]]
+				for(var i=0;i<arr.length;i++){
+					document.write("<tr>");
+					for(var j=0;j<arr[i].length;j++){
+						document.write("<td>"+arr[i][j]+"</td>");
+					}
+					document.write("</tr>");
+				}
+			
+			</script>
+		</table>
+		
+		
+	</body>
+</html>

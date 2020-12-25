@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var d1 = new Date();
+			var newdate = format(d1);
+			console.log(newdate);
+
+			function format(d) {
+				var year = d.getFullYear();
+				console.log(year);
+				var mouth = d.getMonth() + 1;
+				console.log(mouth);
+				var date = d.getDate();
+				console.log(date);
+				var hours = d.getHours();
+				console.log(hours);
+				var minute = d.getMinutes();
+				console.log(minute);
+				var second = d.getSeconds();
+				console.log(second);
+
+				mouth = mouth < 10 ? "0" + mouth : mouth;
+				date = date < 10 ? "0" + date : date;
+				hours = hours < 10 ? "0" + hours : hours;
+				minute = minute < 10 ? "0" + minute : minute;
+				second = second < 10 ? "0" + second : second;
+
+				return year + "/" + mouth + "/" + date;
+
+
+
+			}
+		</script>
+	</body>
+</html>

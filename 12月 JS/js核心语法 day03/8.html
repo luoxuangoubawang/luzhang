@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function healthIndex(weight,height){
+				var index=weight/(height*height);
+				if(index>25){
+					return "pang"
+				}else if(index>20){
+					return "正常"
+				}else{
+					return "偏瘦"
+				}
+				
+			}
+			var r=healthIndex(85,1.75)
+			console.log(r);
+			
+		</script>
+	</body>
+</html>

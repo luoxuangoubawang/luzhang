@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+		    function add(num){
+				var sum=0;
+				if(num>=1){
+					sum=num+add(--num);	
+				}
+				return sum;
+			}	
+			
+	        console.log(add(6))		
+			
+			
+		</script>
+	</body>
+</html>

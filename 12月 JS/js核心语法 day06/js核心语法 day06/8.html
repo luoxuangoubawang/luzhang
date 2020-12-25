@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var str='TOM@95@88#mary@79@60#john@80@60';
+			var arr=str.split("#");
+			var arrobj=[]
+			console.log(arr);
+			for(var i=0;i<arr.length;i++){
+				console.log(arr[i]);
+				 var newarr=arr[i].split("@");
+				 arrobj.push(newarr);
+			}
+			console.log(arrobj);
+			
+			
+		</script>
+	</body>
+</html>
